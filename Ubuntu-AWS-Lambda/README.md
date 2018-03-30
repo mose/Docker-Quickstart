@@ -30,8 +30,9 @@ You will need to do your development inside the container while you set a bind m
 	$ docker container run --name aws-serverless -it --rm --hostname=docker  -v /full/path/to/serverless/src:/root/myapp/ shikhir/aws-lambda-nodejs
 
 If you already have your AWS credentials installed locally, you can bind mount to both your serverless source directory and your .aws credentials directory
-	$ docker container run --name aws-serverless -it --rm --hostname=docker  -v "/full/path/to/serverless/src:":/root/myapp -v "/Users/username/.aws":/root/.aws shikhir/aws-lambda-nodejs
 	
+	$ docker container run --name aws-serverless -it --rm --hostname=docker  -v "/full/path/to/serverless/src:":/root/myapp -v "/Users/username/.aws":/root/.aws shikhir/aws-lambda-nodejs
+
 ## Licence
 
 Apache 2.0
